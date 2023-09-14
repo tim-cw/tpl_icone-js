@@ -127,8 +127,7 @@ dialog:target {
             li {
                 padding-left: 10px;
                 position: relative;
-                display: grid;
-                gap: 20px;
+
                 &::before {
                     content: '';
                     display: block;
