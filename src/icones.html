@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CW3 - Semaine 04</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        <section class="exercice">
+            <div class="wrapper">
+                <h1>ex1. Les icônes</h1>
+
+                <section class="number" id="num01">
+                    <div class="number__header">
+                        <h2>
+                            numéro 1 -
+                            <span>icones standards</span>
+                        </h2>
+                        <p>
+                            Dans ce numéro vous devez faire en sorte d'utiliser le « snippets » des icônes
+                            <i>tim-icon</i>
+                            pour faire apparaitre les icônes demandées.
+                        </p>
+                        <h3>Instructions</h3>
+                        <div class="instructions">
+                            <a href="#num01-maquette" class="button--instruction">résultat final</a>
+                            <a href="#num01-css" class="button--instruction">fiche technique</a>
+                        </div>
+                    </div>
+                    <div class="number__content">
+                        <!-- inclure le partials de l'exercice 1 ici -->
+                    </div>
+                </section>
+                <section class="number" id="num2">
+                    <div class="number__header">
+                        <h2>
+                            numéro 2 -
+                            <span>icones à ajuster</span>
+                        </h2>
+                        <p>Dans ce numéro vous devez vous assurer que les icônes sont dans le format adéquat pour être utilisé dans nos projets.</p>
+                        <h3>Instructions</h3>
+                        <div class="instructions">
+                            <a href="#num02-maquette" class="button--instruction">résultat final</a>
+                            <a href="#num02-css" class="button--instruction">fiche technique</a>
+                        </div>
+                    </div>
+                    <div class="number__content">
+                        <!-- inclure votre partials de l'exercice 2 ici -->
+                    </div>
+                </section>
+            </div>
+        </section>
+        {% include "_partials/dialog/_icones.html" %}
+    </body>
+</html>

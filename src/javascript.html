@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CW3 - Semaine 04</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        <section class="exercice">
+            <div class="wrapper">
+                <h1>ex1. Les bases de l'orienté objet (POO)</h1>
+
+                <section class="number" id="num1">
+                    <div class="number__header">
+                        <h2>
+                            numéro 1 -
+                            <span>Créez la classe Main</span>
+                        </h2>
+                        <p>
+                            L'objectif de ce numéro est de vous faire créer votre première classe JavaScript. Elle nous servira ensuite de base pour la suite.
+                        </p>
+                        <h3>Instructions</h3>
+                        <div class="instructions">
+                            <a href="#num01-maquette" class="button--instruction">résultat final</a>
+                            <a href="#num01-js" class="button--instruction">fiche technique</a>
+                        </div>
+                    </div>
+                    <div class="number__content">{% include "_partials/num2/_ex1.html" %}</div>
+                </section>
+                <section class="number" id="num2">
+                    <div class="number__header">
+                        <h2>
+                            numéro 2 -
+                            <span>Clic et toggle</span>
+                        </h2>
+                        <p>Dans ce numéro vous devez ajouter un click sur le bouton et faire en sorte qu'il alterne la classe active sur le texte.</p>
+                        <h3>Instructions</h3>
+                        <div class="instructions">
+                            <a href="#num02-maquette" class="button--instruction">résultat final</a>
+                            <a href="#num02-js" class="button--instruction">fiche technique</a>
+                        </div>
+                    </div>
+                    <div class="number__content">{% include "_partials/num2/_ex2.html" %}</div>
+                </section>
+                <section class="number" id="num3">
+                    <div class="number__header">
+                        <h2>
+                            numéro 3 -
+                            <span>click multiple et changement de contenu</span>
+                        </h2>
+                        <p>
+                            Dans ce numéro, vous devez ajouter un clic sur tous les boutons et faire en sorte que le contenu du texte change pour la valeur du
+                            bouton cliqué
+                        </p>
+                        <h3>Instructions</h3>
+                        <div class="instructions">
+                            <a href="#num03-maquette" class="button--instruction">résultat final</a>
+                            <a href="#num03-js" class="button--instruction">fiche technique</a>
+                        </div>
+                    </div>
+                    <div class="number__content">{% include "_partials/num2/_ex3.html" %}</div>
+                </section>
+                <section class="number" id="num4">
+                    <div class="number__header">
+                        <h2>
+                            numéro 4 -
+                            <span>DÉFI OPTIONNEL</span>
+                        </h2>
+                        <p>
+                            Dans ce numéro, vous devez faire en sorte que lorsqu'on clique sur le bouton la valeur de la variable color-primary change pour le
+                            site au complet
+                        </p>
+                        <h3>Instructions</h3>
+                        <div class="instructions">
+                            <a href="#num04-maquette" class="button--instruction">résultat final</a>
+                            <a href="#num04-js" class="button--instruction">fiche technique</a>
+                        </div>
+                    </div>
+                    <div class="number__content">{% include "_partials/num2/_ex4.html" %}</div>
+                </section>
+            </div>
+        </section>
+        {% include "_partials/dialog/_javascript.html" %}
+    </body>
+</html>

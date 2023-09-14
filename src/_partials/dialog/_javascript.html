@@ -1,0 +1,241 @@
+<dialog id="num01-maquette">
+    <a href="#num01" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Maquette</h3>
+        <img src="assets/images/ex2/num1-maquette.png" alt="" />
+        <p class="close">Cliquez à l'extérieur pour fermer la fenêtre</p>
+    </div>
+</dialog>
+
+<dialog id="num01-js">
+    <a href="#num01" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Étapes à suivre</h3>
+        <ol>
+            <li>
+                Dans le fichier
+                <strong>Main.js</strong>
+                , créez la classe
+                <strong>Main</strong>
+            </li>
+            <li>Ajoutez la méthode essentielle au bon fonctionnement d'une classe POO (constructeur)</li>
+            <li>
+                Dans le
+                <em>constructeur</em>
+                faites un console.log('Les profs de web III sont cool!')
+            </li>
+            <li>Regardez dans la console de votre navigateur si vous voyez le message</li>
+            <li>
+                Vous ne devriez pas le voir! Il faut d'abord créer une nouvelle instance de la classe Main
+                <strong>(pensez new)</strong>
+            </li>
+            <li>Vous devriez maintenant voir le message dans la fenêtre de console du navigateur</li>
+            <li>
+                Dans votre classe
+                <strong>Main</strong>
+                , créez une nouvelle méthode nommée
+                <strong>init</strong>
+            </li>
+            <li>
+                Transférez le console.log dans votre méthode
+                <strong>init</strong>
+            </li>
+            <li>
+                Dans le constructeur, appellez la méthode
+                <strong>init</strong>
+                . (this.maMethode();)
+            </li>
+            <li>Validez que vous voyez toujours le console apparâitre dans la fenêtre de votre navigateur</li>
+            <li>
+                Vous avez maintenant complété le numéro 1. Allez dans le fichier
+                <em>_partials/num2/_ex1.html</em>
+                et changer le contenu du
+                <em>h3</em>
+                pour
+                <strong>Les profs de Web III sont cool!!!</strong>
+            </li>
+        </ol>
+    </div>
+</dialog>
+
+<dialog id="num02-maquette">
+    <a href="#num02" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Maquette</h3>
+        <img src="assets/images/ex2/num2-maquette.gif" alt="" />
+        <p class="close">Cliquez à l'extérieur pour fermer la fenêtre</p>
+    </div>
+</dialog>
+
+<dialog id="num02-js">
+    <a href="#num02" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h2>Étapes à suivre</h2>
+        <h3>Ajout d'un clic sur le bouton</h3>
+        <ol>
+            <li>Reprendre le fichier Main complété au précédent numéro</li>
+            <li>
+                Dans la méthode
+                <strong>init</strong>
+                , créez une variable
+                <strong>button</strong>
+            </li>
+            <li>
+                Assignez lui la valeur du contenu HTML
+                <strong>.js-button</strong>
+                (querySelector ou querySelectorAll?)
+            </li>
+            <li>
+                Sur votre bouton, ajoutez un événement de type
+                <strong>click</strong>
+                qui apelle la méthode
+                <strong>toggleActive</strong>
+                (n'oublier pas le this)
+            </li>
+            <li>Créez une méthode toggleActive</li>
+            <li>Dans votre méthode toggleActive, ajoutez un console.log('je click sur mon bouton') et testez dans votre console de navigateur</li>
+        </ol>
+        <h3>On fait du deboggage</h3>
+        <p>
+            Avant d'aller plus loin, c'est important de tester au fur et à mesure. Si votre console.log dans la méthode
+            <strong>toggleActive</strong>
+            fonctionne, passez à l'étape suivante.. sinon trouvez l'erreur.
+        </p>
+        <ol>
+            <li>La première étape est de regarder s'il y a un message d'erreur dans la console</li>
+            <li>
+                Ensuite, vous pouvez faire un console.log des éléments que vous avez créés comme la variable
+                <strong>button</strong>
+            </li>
+            <li>
+                La variable
+                <strong>button</strong>
+                devrait retourner la balise HTML button que vous venez de créer.
+            </li>
+            <li>Si ce n'est pas le cas, l'erreur est avec votre querySelector. Ajustez votre code au besoin.</li>
+        </ol>
+        <h3>On change la classe du texte</h3>
+        <ol>
+            <li>
+                Dans votre méthode toggleActive, créez une variable nommée
+                <strong>text</strong>
+            </li>
+            <li>
+                Assignez lui la valeur du contenu HTML de l'élément
+                <strong>.js-text</strong>
+                (querySelector ou querySelectorAll?)
+            </li>
+            <li>
+                À l'aide de
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList" target="_blank">classList</a>
+                , faites alterner la classe active sur la variable
+                <strong>text</strong>
+            </li>
+        </ol>
+    </div>
+</dialog>
+
+<dialog id="num03-maquette">
+    <a href="#num03" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Maquette</h3>
+        <img src="assets/images/ex2/num3-maquette.gif" alt="" />
+        <p class="close">Cliquez à l'extérieur pour fermer la fenêtre</p>
+    </div>
+</dialog>
+
+<dialog id="num03-js">
+    <a href="#num03" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h2>Étapes à suivre</h2>
+        <h3>Ajout d'un click sur plusieurs boutons</h3>
+        <ol>
+            <li>Reprendre le fichier Main complété du précédent numéro</li>
+            <li>Ajoutez des classes préfixées (js-) pour les boutons et le H3 (.js-prof et .js-choice seront utilisés dans cette explication)</li>
+            <li>
+                Dans la méthode
+                <strong>init</strong>
+                , créez une variable
+                <strong>buttons</strong>
+            </li>
+            <li>
+                Assignez lui la valeur des éléments HTML qui ont la classe
+                <strong>.js-prof</strong>
+                (querySelector ou querySelectorAll?)
+            </li>
+            <li>
+                À l'aide d'une boucle
+                <strong>for</strong>
+                , ajoutez un événement de type click qui apelle la méthode
+                <strong>toggleContent</strong>
+                sur tous vos boutons. (n'oublier pas le this)
+            </li>
+            <li>
+                Créez la méthode
+                <strong>toggleContent</strong>
+            </li>
+            <li>
+                Dans votre méthode
+                <strong>toggleContent</strong>
+                , ajoutez un console.log('je click sur un bouton') et testez dans votre console de navigateur
+            </li>
+        </ol>
+        <h3>On fait du deboggage</h3>
+        <p>
+            Avant d'aller plus loin, c'est important de tester au fur et à mesure. Si votre console.log dans la méthode
+            <strong>toggleContent</strong>
+            fonctionne, passez à la section suivante.
+        </p>
+        <ol>
+            <li>La première étape est de regarder s'il y a un message d'erreur dans la console</li>
+            <li>
+                Ensuite, vous pouvez faire un console.log des éléments que vous avez créées comme la variable
+                <strong>buttons</strong>
+            </li>
+            <li>
+                <strong>buttons</strong>
+                devrait retourner un tableau([] ou Array) de balises HTML (doit contenir 3 boutons)
+            </li>
+            <li>Si ce n'est pas le cas, l'erreur est avec votre querySelector</li>
+        </ol>
+        <h3>On change le contenu du texte</h3>
+        <ol>
+            <li>
+                Dans votre méthode
+                <strong>toggleContent</strong>
+                , créez la variable
+                <strong>choice</strong>
+            </li>
+            <li>Assignez lui la valeur du contenu HTML .js-choice (querySelector ou querySelectorAll?)</li>
+            <li>
+                Avant d'aller plus loin, faites un console.log(texte du bouton cliqué). Voir
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText" target="_blank">innerText</a>
+                et
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget">currentTarget</a>
+            </li>
+            <li>
+                Changez le innerText de votre variable
+                <strong>choice</strong>
+                pour le innerText de l'élément cliqué
+            </li>
+            <li>À l'aide d'une concaténation, ajoutez devant la valeur du bouton cliqué : "Mon prof préféré est : "</li>
+        </ol>
+    </div>
+</dialog>
+
+<dialog id="num04-maquette">
+    <a href="#num04" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Maquette</h3>
+        <img src="assets/images/ex2/num4-maquette.gif" alt="" />
+        <p class="close">Cliquez à l'extérieur pour fermer la fenêtre</p>
+    </div>
+</dialog>
+
+<dialog id="num04-js">
+    <a href="#num04" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h2>Étapes à suivre</h2>
+        <h3>« A VOS INTUITIONS VOUS FIER, IL FAUT. JEUNE PADAWAN »</h3>
+    </div>
+</dialog>
