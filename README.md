@@ -1,8 +1,3 @@
-# Exercice révision WordPress (etim)
-
-Base de travail de la partie 1 pour l'exercice de révision
-<br><br>
-
 ## **Comment démarrer le stack**
 
 npm install suivi de npm start pour démarrer le stack
